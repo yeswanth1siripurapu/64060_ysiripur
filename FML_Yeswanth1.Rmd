@@ -1,0 +1,45 @@
+---
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r}
+#Importing dataset iris
+data("iris")
+head(iris)
+
+# The descriptive statistics for some of the quantitative variables
+
+
+summary(iris)
+
+# The frequencies of the qualitative variables 
+# For selecting a particular variable we use '$' symbol.
+
+table(iris$Species)
+
+
+#Descriptive statistics for quantitative and qualitative variables
+
+#We use descriptive statistics to determine the mean, median, mode, and standard deviation for quantitative variables, and we summarise the frequencies and proportions of the various categories for qualitative variables.Because quantitative variables are numerical variables and qualitative factors are character-based variables, the dataset Iris Statistics comprises both types of variables.
+
+
+log(iris$Sepal.Length)
+
+# Here i'm selecting the SepalLengthCm variable
+#Plotting technique using plot() 
+
+plot(iris$Sepal.Length)
+
+x=(iris$Sepal.Length)
+y=(iris$Petal.Width)
+plot(x,y)
+
+
+
+
+
+
+
+```
